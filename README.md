@@ -6,7 +6,7 @@ Transformar un dataset de retail desordenado en una herramienta interactiva para
 ---
 
 ## 📂 Recursos del Proyecto
-* **Dataset Utilizado:** [Descargar Aquí](Data/superstore_cleaned.csv)
+* **Dataset Utilizado:** https://github.com/sebaaa16/Analisis-ventas-rentabilidad-superstore/blob/main/Sample%20-%20Superstore.csv
 * **Herramientas:** Power BI Desktop / Power Query.
 * **Técnicas:** Limpieza de delimitadores, tipado de datos y cálculos con medidas DAX.
 
@@ -19,17 +19,17 @@ Siguiendo un enfoque de análisis de datos profesional, el dashboard responde a:
     * *Solución:* Implementación de **Cards (Tarjetas)** dinámicas con medidas DAX.
 2.  **Rendimiento por Categoría:** ¿Qué categorías generan más ingresos y cuáles son realmente las más rentables?
     * *Solución:* **Gráfico de barras agrupadas** para contrastar volumen de venta vs. rentabilidad.
-3.  **Análisis Geográfico:** ¿En qué estados o ciudades estamos perdiendo dinero (Ganancia negativa)?
-    * *Solución:* **Mapa de burbujas** con formato condicional (Rojo para negativo / Verde para positivo).
+3.  **Análisis Geográfico:** ¿Cómo se distribuyen las ventas a lo largo del territorio nacional por estado?
+    * *Solución:* **Mapa de burbujas** titulado "Distribución geográfica de ventas por estado".
 4.  **Evolución Temporal:** ¿Hay algún mes o día del año donde las ventas caigan drásticamente?
     * *Solución:* **Gráfico de líneas de tendencia** detallado por fecha.
 
 ---
 
 ## 🖼️ Dashboard Final
-Aquí puedes ver el resultado de la visualización:
+Aca podes ver el resultado de la visualización:
 
-![Vista del Tablero](Report/dashboard_screenshot.png)
+https://github.com/sebaaa16/Analisis-ventas-rentabilidad-superstore/blob/main/Dashboard.PNG
 
 ---
 
@@ -43,7 +43,12 @@ Como los datos originales presentaban errores de formato y columnas amontonadas,
 ---
 
 ## 💡 Insights Clave
-* **Rentabilidad Crítica:** Se detectó un margen promedio global del **
+* **Rentabilidad Crítica:** Se detectó un margen promedio global del **2.49%**, alertando sobre costos operativos elevados en ciertas líneas.
+* **Visibilidad Geográfica:** El mapa permitió identificar rápidamente qué estados concentran el mayor volumen de facturación.
+* **Picos de Demanda:** La evolución temporal facilitó la identificación de las fechas de mayor facturación para optimizar la gestión de inventario.
+
+---
+*Desarrollado por Sebastian Mayorga - Junior Data Analyst*
 
 ---
 *Desarrollado por [Tu Nombre] - Junior Data Analyst*
