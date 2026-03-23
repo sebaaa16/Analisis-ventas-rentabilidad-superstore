@@ -47,8 +47,6 @@ Como los datos originales presentaban errores de formato y columnas amontonadas,
 * **Visibilidad Geográfica:** El mapa permitió identificar rápidamente qué estados concentran el mayor volumen de facturación, facilitando la detección de mercados clave.
 * **Optimización de Inventario:** Gracias al gráfico de evolución temporal, se identificaron los picos de demanda estacionales, permitiendo una mejor planificación de stock y logística.
 
----
-*Desarrollado por Sebastian Mayorga - Junior Data Analyst*
 
----
-*Desarrollado por [Tu Nombre] - Junior Data Analyst*
+--
+*Desarrollado por [Tu Nombre] - Junior Data Analyst
