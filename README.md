@@ -1,51 +1,49 @@
-# 📊 Análisis de Ventas y Rentabilidad - Retail Dashboard
+# 📊 Dashboard de Performance Comercial: Superstore Analysis
 
 ## 🎯 Objetivo del Proyecto
-El objetivo de este proyecto es analizar el desempeño comercial de una tienda minorista (Superstore) para identificar patrones de venta, medir la rentabilidad real por categoría y optimizar la toma de decisiones basada en datos geográficos y temporales.
+Transformar un dataset de retail desordenado en una herramienta interactiva para la toma de decisiones. El enfoque principal fue realizar un proceso de **ETL en Power Query** y responder a 4 preguntas críticas sobre la salud financiera y operativa del negocio.
 
 ---
 
 ## 📂 Recursos del Proyecto
-* **Data Set Utilizado:** [Descargar Dataset Aquí](Data/superstore_cleaned.csv) *(Asegúrate de que la ruta sea correcta)*
-* **Herramienta de Visualización:** Power BI Desktop.
-* **Procesamiento de Datos:** PostgreSQL / Power Query.
+* **Dataset Utilizado:** [Descargar Aquí](Data/superstore_cleaned.csv)
+* **Herramientas:** Power BI Desktop / Power Query.
+* **Técnicas:** Limpieza de delimitadores, tipado de datos y cálculos con medidas DAX.
 
 ---
 
-## ❓ Preguntas de Negocio (KPIs)
-Para guiar el análisis, respondimos las siguientes preguntas clave:
-1. ¿Cuál es el **Margen de Ganancia** global y por categoría?
-2. ¿Qué estados presentan pérdidas a pesar de tener ventas altas?
-3. ¿Cómo evolucionan las ventas en una escala de **tiempo diaria**?
-4. ¿Cuáles son las **Top 10 Subcategorías** que más ingresos generan?
-5. ¿Qué segmento de cliente (Consumidor, Corporativo, etc.) es el más rentable?
+## ❓ Preguntas de Negocio Resueltas (KPIs)
+Siguiendo un enfoque de análisis de datos profesional, el dashboard responde a:
+
+1.  **Salud Financiera (KPIs):** ¿Cuál es el total de Ventas, la Ganancia total y el Margen de beneficio promedio?
+    * *Solución:* Implementación de **Cards (Tarjetas)** dinámicas con medidas DAX.
+2.  **Rendimiento por Categoría:** ¿Qué categorías generan más ingresos y cuáles son realmente las más rentables?
+    * *Solución:* **Gráfico de barras agrupadas** para contrastar volumen de venta vs. rentabilidad.
+3.  **Análisis Geográfico:** ¿En qué estados o ciudades estamos perdiendo dinero (Ganancia negativa)?
+    * *Solución:* **Mapa de burbujas** con formato condicional (Rojo para negativo / Verde para positivo).
+4.  **Evolución Temporal:** ¿Hay algún mes o día del año donde las ventas caigan drásticamente?
+    * *Solución:* **Gráfico de líneas de tendencia** detallado por fecha.
 
 ---
 
-## 🖼️ Dashboard Preview
-Aquí puedes ver una captura del tablero interactivo finalizado:
+## 🖼️ Dashboard Final
+Aquí puedes ver el resultado de la visualización:
 
-![Dashboard Preview](Report/dashboard_screenshot.png)
-
----
-
-## 🛠️ Proceso de Análisis
-1.  **Extracción:** Importación del dataset CSV original.
-2.  **Limpieza (ETL):** Uso de SQL y Power Query para corregir formatos de fecha, moneda y escalas de magnitud.
-3.  **Modelado:** Creación de medidas DAX para calcular el % de margen y total de beneficios.
-4.  **Visualización:** Diseño de interfaz con panel de filtros lateral para interactividad total.
+![Vista del Tablero](Report/dashboard_screenshot.png)
 
 ---
 
-## 💡 Insights y Conclusiones
-* **Rentabilidad Crítica:** Aunque las ventas son altas, el margen promedio es del **2.49%**. La categoría de Muebles es la que más afecta negativamente este número.
-* **Oportunidad Geográfica:** El estado de California es el motor de ventas, pero se detectaron estados en la región "Central" con retornos negativos.
-* **Eficiencia de Segmento:** El segmento "Consumer" representa la mayor parte de los ingresos, permitiendo enfocar campañas de marketing específicas.
+## 🛠️ Mi Proceso de Trabajo (ETL con Power Query)
+Como los datos originales presentaban errores de formato y columnas amontonadas, realicé los siguientes pasos:
+* **Separación de Columnas:** Corregí el archivo CSV original aplicando delimitadores por coma.
+* **Limpieza de Formatos:** Ajusté las columnas de Ventas y Ganancia a formato "Número Decimal Fijo" para asegurar la exactitud de los cálculos.
+* **Cálculos DAX:** Creé la medida clave `Margen = DIVIDE(SUM(Profit), SUM(Sales))` para monitorear la rentabilidad real.
+* **UI/UX:** Diseñé un panel de filtros lateral para permitir una navegación fluida por región, año y categoría.
 
 ---
 
-## 🏁 Conclusión Final
-Este análisis demuestra que el volumen de ventas no siempre equivale a éxito financiero. Se recomienda revisar la estructura de costos y descuentos en la categoría de Muebles para elevar el margen neto del negocio.
+## 💡 Insights Clave
+* **Rentabilidad Crítica:** Se detectó un margen promedio global del **
 
 ---
 *Desarrollado por [Tu Nombre] - Junior Data Analyst*
