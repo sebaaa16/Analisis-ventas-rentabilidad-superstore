@@ -37,15 +37,15 @@ https://github.com/sebaaa16/Analisis-ventas-rentabilidad-superstore/blob/main/Da
 Como los datos originales presentaban errores de formato y columnas amontonadas, realicé los siguientes pasos:
 * **Separación de Columnas:** Corregí el archivo CSV original aplicando delimitadores por coma.
 * **Limpieza de Formatos:** Ajusté las columnas de Ventas y Ganancia a formato "Número Decimal Fijo" para asegurar la exactitud de los cálculos.
-* **Cálculos DAX:** Creé la medida clave `Margen = DIVIDE(SUM(Profit), SUM(Sales))` para monitorear la rentabilidad real.
+* **Cálculos DAX:** Creé la medida clave `Margen = DIVIDE(SUM('Sample - Superstore'[Profit]), SUM('Sample - Superstore'[Sales]))` para monitorear la rentabilidad real de cada operación.
 * **UI/UX:** Diseñé un panel de filtros lateral para permitir una navegación fluida por región, año y categoría.
 
 ---
 
-## 💡 Insights Clave
-* **Rentabilidad Crítica:** Se detectó un margen promedio global del **2.49%**, alertando sobre costos operativos elevados en ciertas líneas.
-* **Visibilidad Geográfica:** El mapa permitió identificar rápidamente qué estados concentran el mayor volumen de facturación.
-* **Picos de Demanda:** La evolución temporal facilitó la identificación de las fechas de mayor facturación para optimizar la gestión de inventario.
+## 💡 Insights Clave 
+* **Salud Financiera:** Se determinó que el **Margen de Beneficio promedio es del 12,47%**, un indicador sólido para el sector de retail, aunque con variaciones importantes entre categorías.
+* **Visibilidad Geográfica:** El mapa permitió identificar rápidamente qué estados concentran el mayor volumen de facturación, facilitando la detección de mercados clave.
+* **Optimización de Inventario:** Gracias al gráfico de evolución temporal, se identificaron los picos de demanda estacionales, permitiendo una mejor planificación de stock y logística.
 
 ---
 *Desarrollado por Sebastian Mayorga - Junior Data Analyst*
